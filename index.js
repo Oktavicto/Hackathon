@@ -10,11 +10,11 @@
 //   ['kerupuk', 2000]
 // ]
 
-prompt("Mohon masukkan nama anda")
-prompt("Mohon masukkan alamat anda")
+// prompt("Mohon masukkan nama anda")
+// prompt("Mohon masukkan alamat anda")
 
 let total = 0
-let buttonNasi = document.getElementsByClassName("nasi")[0]
+let buttonNasi = document.getElementById("nasi")
 let counterNasi = 0
 buttonNasi.addEventListener("click", function (event) {
   event.preventDefault()
@@ -22,7 +22,7 @@ buttonNasi.addEventListener("click", function (event) {
   if (counterNasi === 1) {
     const belanja = document.getElementById("belanjaan")
     const list = document.createElement('li')
-    list.classList.add('qtyNasi')
+    // list.classList.add('qtyNasi')
     list.id = 'qtyNasi'
     list.innerText = `Nasi x ${counterNasi}`
     belanja.appendChild(list)
