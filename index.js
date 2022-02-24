@@ -22,47 +22,128 @@ totalBelanja => 36000
 
 const menuWartol = [
   ['nasi', 3000],
-  ['telor balado', 5000],
+  ['telorBalado', 5000],
   ['ayam', 10000],
-  ['oseng tempe', 5000],
-  ['sayur kangkung', 5000],
+  ['osengTempe', 5000],
+  ['sayurKangkung', 5000],
   ['gorengan', 2000],
   ['rawon', 12000],
-  ['es teh', 4000],
+  ['esTeh', 4000],
   ['kerupuk', 2000]
 ]
 
-let pesanan = {nasi: 2, ayam: 3}
+let pesanan 
 
-function detailPesanan(input) {
-  let result = {}
-  for (const key in input) {
-    let total = 0
-    for (let i = 0; i < menuWartol.length; i++) {
-      const menu = menuWartol[i];
-
-      if (key === menu[0]) {
-        total = (menu[1] * input[key])
-      }
-      
-    }
-    result[key] = {
-      jumlah: input[key],
-      total: total
-    }
+function totalBelanja(detailBelanja) {
+  if (!detailBelanja) {
+    return 'belanja dulu'
   }
-  return result
-}
-
-console.log(detailPesanan(pesanan))
-
-function totalBelanja() {
-  let detailBelanja = detailPesanan(pesanan)
   let totalBelanja = 0
   for (const key in detailBelanja) {
-    totalBelanja += detailBelanja[key].total
+    for (let i = 0; i < menuWartol.length; i++) {
+      const menu = menuWartol[i];
+      if (menu[0] === key) {
+        totalBelanja += (detailBelanja[key] * menu[1])
+      }
+    }
   }
   return totalBelanja
 }
 
-console.log(totalBelanja())
+// console.log(totalBelanja(pesanan))
+
+let totalNasi = 0
+let buttonNasi = document.getElementById("nasi")
+let counterNasi = 0
+buttonNasi.addEventListener("click", function (event) {
+  event.preventDefault()
+  totalNasi += 3000
+  counterNasi++
+  if (counterNasi === 1) {
+    const belanja = document.getElementById("belanjaan")
+    const list = document.createElement('li')
+    list.classList.add('qtyNasi')
+    list.id = 'qtyNasi'
+    list.innerText = `Nasi x ${counterNasi}`
+    belanja.appendChild(list)
+    const resetButton = document.createElement('button')
+    resetButton.id = 'resetNasi'
+    resetButton.innerText = `Reset`
+    list.appendChild(resetButton)
+    console.log(document.getElementById("qtyNasi"))
+
+  } else {
+    let list = document.getElementById("qtyNasi")
+    list.innerText = `Nasi x ${counterNasi}`
+    const resetButton = document.createElement('button')
+    resetButton.id = 'resetNasi'
+    resetButton.innerText = `Reset`
+    list.appendChild(resetButton)
+  }
+
+  let buttonResetNasi = document.getElementById('resetNasi')
+
+  buttonResetNasi.addEventListener("click", function () {
+    let parent = document.getElementById('belanjaan')
+    let child = document.getElementById('qtyNasi')
+    parent.removeChild(child)
+    total = total - (counterNasi*3000)
+    counterNasi = 0
+  })
+  
+})
+
+
+
+// let buttonAyam = document.getElementById("ayam")
+// let counterAyam = 0
+// buttonAyam.addEventListener("click", function (event) {
+//   event.preventDefault()
+//   total += 10000
+//   counterAyam++
+//   if (counterAyam === 1) {
+//     const belanja = document.getElementById("belanjaan")
+//     const list = document.createElement('li')
+//     // list.classList.add('qtyAyam')
+//     list.id = 'qtyAyam'
+//     list.innerText = `Ayam x ${counterAyam}`
+//     belanja.appendChild(list)
+//     const resetButton = document.createElement('button')
+//     resetButton.id = 'resetAyam'
+//     resetButton.innerText = `Reset`
+//     list.appendChild(resetButton)
+
+//   } else {
+//     let list = document.getElementById("qtyAyam")
+//     list.innerText = `Ayam x ${counterAyam}`
+//     const resetButton = document.createElement('button')
+//     resetButton.id = 'resetAyam'
+//     resetButton.innerText = `Reset`
+//     list.appendChild(resetButton)
+//   }
+
+//   let buttonResetAyam = document.getElementById('resetAyam')
+
+//   buttonResetAyam.addEventListener("click", function () {
+//     let parent = document.getElementById('belanjaan')
+//     let child = document.getElementById('qtyAyam')
+//     parent.removeChild(child)
+//     total = total - (counterAyam*10000)
+//     counterAyam = 0
+//   })
+
+// })
+
+console.log(totalNasi)
+console.log(counterNasi)
+
+
+
+
+
+
+
+
+
+
+
