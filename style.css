@@ -1,13 +1,60 @@
 body {
-    background-color: rgb(255, 252, 86);    
+    background-color: rgb(255, 252, 86);
+    height: 100%;
+    width: 100%;
+    position: fixed;    
 }
 
 header {
-    width: 100%;
-    height: 100px;
-    display: block;
-    /* background-color: rgb(143, 206, 25); */
-    background-image: url(../bahancss/warteg.jfif);
-    background-repeat: no-repeat;
-    background-size: 100%;
+  width: 100%;
+  height: 100px;
+  display: block;
+  /* background-color: rgb(143, 206, 25); */
+  background-image: url(../bahancss/warteg.jfif);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
+
+img {
+  width: 100px;
+}
+
+.card {
+  padding: 10px 20px;
+  width: 50px;
+  height: 50px;
+}
+
+main {
+  display: inline-flex;
+  width: 100%;
+  height: 80%;
+  padding: 10px;
+}
+
+footer {
+  padding: 0px;
+  height: 100%;
+}
+
+.checkout {
+  width: 30%;
+  height: 80%;
+  border: 1px solid black;
+  float: left;
+}
+
+.menu {
+  width: 70%;
+  height: 80%;
+  left: 30%;
+  border: 1px solid black;
+  float: left;
+  overflow-y: scroll ;
+}
+
+/* #checkout-btn {
+  position: fixed;
+  top: 80%;
+  left: 30%;
+} */
