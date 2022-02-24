@@ -10,6 +10,9 @@
 //   ['kerupuk', 2000]
 // ]
 
+prompt("Mohon masukkan nama anda")
+prompt("Mohon masukkan alamat anda")
+
 let total = 0
 let buttonNasi = document.getElementsByClassName("nasi")[0]
 let counterNasi = 0
