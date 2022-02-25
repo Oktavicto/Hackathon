@@ -10,7 +10,7 @@
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background-image: url(./asset/bg2.jpg);
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: cover;
   
 }
@@ -77,12 +77,12 @@ li {
 
 
 .checkout {
-    background-color: rgba(245, 233, 179, 0);
+    background-color: rgba(0, 0, 0, 0.432);
     opacity: 100%;
     border-radius: 7px;
     /* display:inline-flex; */
     width: 26%;
-    height: 74%;
+    height: 78%;
     float: left;
     position: fixed;
     padding: auto;
@@ -98,7 +98,7 @@ li {
     background-color: rgba(209, 209, 206, 0);
     width: 70%;
     /* max-width: 530px; */
-    height: 74%;
+    height: 78%;
     left: 29%;
     float: left;
     overflow-y: scroll;
@@ -130,7 +130,7 @@ main {
 .card {
     padding: 10px 20px;
     width: 200px;
-    height: 300px;
+    height: 350px;
     border: 2px solid rgba(0, 0, 0, 0);
     margin: 10px;
     /* max-width: fit-content;
@@ -167,9 +167,12 @@ main {
 }
 
 .card-title {
+  width: 180px;
+  height: 50px;
   text-align: center;
-  font-size: x-large;
-  margin: 2%;
+  font-size: 135%;
+  padding-top: 20px;
+  margin: 4%;
 }
 
 .card-text {
@@ -186,20 +189,32 @@ main {
 
 footer {
   width: 99%;
-  height: 8%;
+  height: 5%;
   display: flex;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: first baseline;
+  gap: 23%;
   color: white;
   /* background-color: rgb(143, 206, 25); */
-  background-color: rgba(95, 77, 44, 0.432);
-  border-radius: 7px;
-  top: 90%;
+  background-color: #a0903593;
+  /* border-radius: 7px; */
+  top: 92%;
   position: fixed;
   padding: 15px;
   font-size: larger;
+  text-align: center;
 }
 
 #owner {
-  display: flex;
-  justify-items: center;
+  /* display: flex;
+  justify-items: center; */
+  margin-left: 0;
+}
+
+#cp {
+  margin: 0;
+}
+
+.list-pesanan {
+  font-size: 105%;
 }

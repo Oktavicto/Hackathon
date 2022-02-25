@@ -22,19 +22,20 @@ buttonNasi.addEventListener("click", function (event) {
   if (counterNasi === 1) {
     const belanja = document.getElementById("belanjaan")
     const list = document.createElement('li')
-    // list.classList.add('qtyNasi')
+    list.classList.add('list-pesanan')
     list.id = 'qtyNasi'
     list.innerText = `Nasi x ${counterNasi}`
     belanja.appendChild(list)
     const resetButton = document.createElement('button')
+    resetButton.classList.add("buy-btn")
     resetButton.id = 'resetNasi'
     resetButton.innerText = `Reset`
     list.appendChild(resetButton)
   } else {
     let list = document.getElementById("qtyNasi")
-    list.classList.add('qtyNasi')
     list.innerText = `Nasi x ${counterNasi}`
     const resetButton = document.createElement('button')
+    resetButton.classList.add("buy-btn")
     resetButton.id = 'resetNasi'
     resetButton.innerText = `Reset`
     list.appendChild(resetButton)
@@ -90,11 +91,12 @@ buttonAyam.addEventListener("click", function (event) {
   if (counterAyam === 1) {
     const belanja = document.getElementById("belanjaan")
     const list = document.createElement('li')
-
+    list.classList.add('list-pesanan')
     list.id = 'qtyAyam'
     list.innerText = `Ayam x ${counterAyam}`
     belanja.appendChild(list)
     const resetButton = document.createElement('button')
+    resetButton.classList.add("buy-btn")
     resetButton.id = 'resetAyam'
     resetButton.innerText = `Reset`
     list.appendChild(resetButton)
@@ -103,6 +105,7 @@ buttonAyam.addEventListener("click", function (event) {
     let list = document.getElementById("qtyAyam")
     list.innerText = `Ayam x ${counterAyam}`
     const resetButton = document.createElement('button')
+    resetButton.classList.add("buy-btn")
     resetButton.id = 'resetAyam'
     resetButton.innerText = `Reset`
     list.appendChild(resetButton)
@@ -156,11 +159,12 @@ buttontelorBalado.addEventListener("click", function (event) {
   if (countertelorBalado === 1) {
     const belanja = document.getElementById("belanjaan")
     const list = document.createElement('li')
-
+    list.classList.add('list-pesanan')
     list.id = 'qtytelorBalado'
     list.innerText = `Telor Balado x ${countertelorBalado}`
     belanja.appendChild(list)
     const resetButton = document.createElement('button')
+    resetButton.classList.add("buy-btn")
     resetButton.id = 'resettelorBalado'
     resetButton.innerText = `Reset`
     list.appendChild(resetButton)
@@ -169,6 +173,7 @@ buttontelorBalado.addEventListener("click", function (event) {
     let list = document.getElementById("qtytelorBalado")
     list.innerText = `Telor Balado x ${countertelorBalado}`
     const resetButton = document.createElement('button')
+    resetButton.classList.add("buy-btn")
     resetButton.id = 'resettelorBalado'
     resetButton.innerText = `Reset`
     list.appendChild(resetButton)
@@ -222,11 +227,12 @@ buttonesTeh.addEventListener("click", function (event) {
   if (counteresTeh === 1) {
     const belanja = document.getElementById("belanjaan")
     const list = document.createElement('li')
-
+    list.classList.add('list-pesanan')
     list.id = 'qtyesTeh'
     list.innerText = `Es Teh x ${counteresTeh}`
     belanja.appendChild(list)
     const resetButton = document.createElement('button')
+    resetButton.classList.add("buy-btn")
     resetButton.id = 'resetesTeh'
     resetButton.innerText = `Reset`
     list.appendChild(resetButton)
@@ -235,6 +241,7 @@ buttonesTeh.addEventListener("click", function (event) {
     let list = document.getElementById("qtyesTeh")
     list.innerText = `Es Teh x ${counteresTeh}`
     const resetButton = document.createElement('button')
+    resetButton.classList.add("buy-btn")
     resetButton.id = 'resetesTeh'
     resetButton.innerText = `Reset`
     list.appendChild(resetButton)
@@ -288,11 +295,12 @@ buttongorengan.addEventListener("click", function (event) {
   if (countergorengan === 1) {
     const belanja = document.getElementById("belanjaan")
     const list = document.createElement('li')
-
+    list.classList.add('list-pesanan')
     list.id = 'qtygorengan'
     list.innerText = `Gorengan x ${countergorengan}`
     belanja.appendChild(list)
     const resetButton = document.createElement('button')
+    resetButton.classList.add("buy-btn")
     resetButton.id = 'resetgorengan'
     resetButton.innerText = `Reset`
     list.appendChild(resetButton)
@@ -301,6 +309,7 @@ buttongorengan.addEventListener("click", function (event) {
     let list = document.getElementById("qtygorengan")
     list.innerText = `Gorengan x ${countergorengan}`
     const resetButton = document.createElement('button')
+    resetButton.classList.add("buy-btn")
     resetButton.id = 'resetgorengan'
     resetButton.innerText = `Reset`
     list.appendChild(resetButton)
@@ -354,11 +363,12 @@ buttonkerupuk.addEventListener("click", function (event) {
   if (counterkerupuk === 1) {
     const belanja = document.getElementById("belanjaan")
     const list = document.createElement('li')
-
+    list.classList.add('list-pesanan')
     list.id = 'qtykerupuk'
     list.innerText = `Kerupuk x ${counterkerupuk}`
     belanja.appendChild(list)
     const resetButton = document.createElement('button')
+    resetButton.classList.add("buy-btn")
     resetButton.id = 'resetkerupuk'
     resetButton.innerText = `Reset`
     list.appendChild(resetButton)
@@ -367,6 +377,7 @@ buttonkerupuk.addEventListener("click", function (event) {
     let list = document.getElementById("qtykerupuk")
     list.innerText = `Kerupuk x ${counterkerupuk}`
     const resetButton = document.createElement('button')
+    resetButton.classList.add("buy-btn")
     resetButton.id = 'resetkerupuk'
     resetButton.innerText = `Reset`
     list.appendChild(resetButton)
@@ -420,11 +431,12 @@ buttonosengTempe.addEventListener("click", function (event) {
   if (counterosengTempe === 1) {
     const belanja = document.getElementById("belanjaan")
     const list = document.createElement('li')
-
+    list.classList.add('list-pesanan')
     list.id = 'qtyosengTempe'
     list.innerText = `Oseng Tempe x ${counterosengTempe}`
     belanja.appendChild(list)
     const resetButton = document.createElement('button')
+    resetButton.classList.add("buy-btn")
     resetButton.id = 'resetosengTempe'
     resetButton.innerText = `Reset`
     list.appendChild(resetButton)
@@ -433,6 +445,7 @@ buttonosengTempe.addEventListener("click", function (event) {
     let list = document.getElementById("qtyosengTempe")
     list.innerText = `Oseng Tempe x ${counterosengTempe}`
     const resetButton = document.createElement('button')
+    resetButton.classList.add("buy-btn")
     resetButton.id = 'resetosengTempe'
     resetButton.innerText = `Reset`
     list.appendChild(resetButton)
@@ -486,11 +499,12 @@ buttonrawon.addEventListener("click", function (event) {
   if (counterrawon === 1) {
     const belanja = document.getElementById("belanjaan")
     const list = document.createElement('li')
-
+    list.classList.add('list-pesanan')
     list.id = 'qtyrawon'
     list.innerText = `Rawon x ${counterrawon}`
     belanja.appendChild(list)
     const resetButton = document.createElement('button')
+    resetButton.classList.add("buy-btn")
     resetButton.id = 'resetrawon'
     resetButton.innerText = `Reset`
     list.appendChild(resetButton)
@@ -499,6 +513,7 @@ buttonrawon.addEventListener("click", function (event) {
     let list = document.getElementById("qtyrawon")
     list.innerText = `Rawon x ${counterrawon}`
     const resetButton = document.createElement('button')
+    resetButton.classList.add("buy-btn")
     resetButton.id = 'resetrawon'
     resetButton.innerText = `Reset`
     list.appendChild(resetButton)
@@ -552,11 +567,12 @@ buttonsayurKangkung.addEventListener("click", function (event) {
   if (countersayurKangkung === 1) {
     const belanja = document.getElementById("belanjaan")
     const list = document.createElement('li')
-
+    list.classList.add('list-pesanan')
     list.id = 'qtysayurKangkung'
     list.innerText = `Sayur Kangkung x ${countersayurKangkung}`
     belanja.appendChild(list)
     const resetButton = document.createElement('button')
+    resetButton.classList.add("buy-btn")
     resetButton.id = 'resetsayurKangkung'
     resetButton.innerText = `Reset`
     list.appendChild(resetButton)
@@ -565,6 +581,7 @@ buttonsayurKangkung.addEventListener("click", function (event) {
     let list = document.getElementById("qtysayurKangkung")
     list.innerText = `Sayur Kangkung x ${countersayurKangkung}`
     const resetButton = document.createElement('button')
+    resetButton.classList.add("buy-btn")
     resetButton.id = 'resetsayurKangkung'
     resetButton.innerText = `Reset`
     list.appendChild(resetButton)
@@ -611,11 +628,15 @@ buttonsayurKangkung.addEventListener("click", function (event) {
 
 let buttonCheckout = document.getElementById("chckout-btn")
 buttonCheckout.addEventListener("click", function () {
-  alert(`Terimakasih telah memesan. Pesanan anda akan segera diantar oleh Mas Yanto ^^. Mohon untuk mempersiapkan biaya sebesar ${new Intl.NumberFormat('id-ID', {
-    style: 'currency',
-    currency: 'IDR'
-  }).format(total)}`)
-  
+  if (total === 0) {
+    alert(`Beli dulu bos!`)
+  } else {
+    alert(`Terimakasih telah memesan. Pesanan anda akan segera diantar oleh Mas Yanto ^^. Mohon untuk mempersiapkan biaya sebesar ${new Intl.NumberFormat('id-ID', {
+      style: 'currency',
+      currency: 'IDR'
+    }).format(total)}`)
+    window.location.reload()
+  }
 })
 
 
