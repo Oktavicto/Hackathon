@@ -24,21 +24,34 @@ buttonNasi.addEventListener("click", function (event) {
     const list = document.createElement('li')
     list.classList.add('list-pesanan')
     list.id = 'qtyNasi'
-    list.innerText = `Nasi x ${counterNasi}`
+    // list.innerText = `Nasi x ${counterNasi}`
+    list.innerHTML =
+    `
+    <div id= "divNasi" style= "display: flex; justify-content: space-between">
+      <span>Nasi</span>
+      <div style= "display: flex; justify-content: flex-end; width: 58%;"><span style= "float: right;"> X ${counterNasi}</span></div>
+    </div>
+    `
     belanja.appendChild(list)
     const resetButton = document.createElement('button')
     resetButton.classList.add("buy-btn")
     resetButton.id = 'resetNasi'
     resetButton.innerText = `Reset`
-    list.appendChild(resetButton)
+    divNasi.appendChild(resetButton)
   } else {
     let list = document.getElementById("qtyNasi")
-    list.innerText = `Nasi x ${counterNasi}`
+    list.innerHTML =
+    `
+    <div id= "divNasi" style= "display: flex; justify-content: space-between">
+      <span>Nasi</span>
+      <div style= "display: flex; justify-content: flex-end; width: 58%;"><span style= "float: right;"> X ${counterNasi}</span></div>
+    </div>
+    `
     const resetButton = document.createElement('button')
     resetButton.classList.add("buy-btn")
     resetButton.id = 'resetNasi'
     resetButton.innerText = `Reset`
-    list.appendChild(resetButton)
+    divNasi.appendChild(resetButton)
 
   }
 
@@ -93,22 +106,34 @@ buttonAyam.addEventListener("click", function (event) {
     const list = document.createElement('li')
     list.classList.add('list-pesanan')
     list.id = 'qtyAyam'
-    list.innerText = `Ayam x ${counterAyam}`
+    list.innerHTML =
+    `
+    <div id= "divAyam" style= "display: flex; justify-content: space-between">
+      <span>Ayam</span>
+      <div style= "display: flex; justify-content: flex-end; width: 55%;"><span style= "float: right;"> X ${counterAyam}</span></div>
+    </div>
+    `
     belanja.appendChild(list)
     const resetButton = document.createElement('button')
     resetButton.classList.add("buy-btn")
     resetButton.id = 'resetAyam'
     resetButton.innerText = `Reset`
-    list.appendChild(resetButton)
+    divAyam.appendChild(resetButton)
 
   } else {
     let list = document.getElementById("qtyAyam")
-    list.innerText = `Ayam x ${counterAyam}`
+    list.innerHTML =
+    `
+    <div id= "divAyam" style= "display: flex; justify-content: space-between">
+      <span>Ayam</span>
+      <div style= "display: flex; justify-content: flex-end; width: 55%;"><span style= "float: right;"> X ${counterAyam}</span></div>
+    </div>
+    `
     const resetButton = document.createElement('button')
     resetButton.classList.add("buy-btn")
     resetButton.id = 'resetAyam'
     resetButton.innerText = `Reset`
-    list.appendChild(resetButton)
+    divAyam.appendChild(resetButton)
   }
 
   let buttonResetAyam = document.getElementById('resetAyam')
@@ -161,22 +186,34 @@ buttontelorBalado.addEventListener("click", function (event) {
     const list = document.createElement('li')
     list.classList.add('list-pesanan')
     list.id = 'qtytelorBalado'
-    list.innerText = `Telor Balado x ${countertelorBalado}`
+    list.innerHTML =
+    `
+    <div id= "divTelorBalado" style= "display: flex; justify-content: space-between">
+      <span>Telor Balado</span>
+      <div style= "display: flex; justify-content: flex-end; width: 38%;"><span style= "float: right;"> X ${countertelorBalado}</span></div>
+    </div>
+    `
     belanja.appendChild(list)
     const resetButton = document.createElement('button')
     resetButton.classList.add("buy-btn")
     resetButton.id = 'resettelorBalado'
     resetButton.innerText = `Reset`
-    list.appendChild(resetButton)
+    divTelorBalado.appendChild(resetButton)
 
   } else {
     let list = document.getElementById("qtytelorBalado")
-    list.innerText = `Telor Balado x ${countertelorBalado}`
+    list.innerHTML =
+    `
+    <div id= "divTelorBalado" style= "display: flex; justify-content: space-between">
+      <span>Telor Balado</span>
+      <div style= "display: flex; justify-content: flex-end; width: 38%;"><span style= "float: right;"> X ${countertelorBalado}</span></div>
+    </div>
+    `
     const resetButton = document.createElement('button')
     resetButton.classList.add("buy-btn")
     resetButton.id = 'resettelorBalado'
     resetButton.innerText = `Reset`
-    list.appendChild(resetButton)
+    divTelorBalado.appendChild(resetButton)
   }
 
   let buttonResettelorBalado = document.getElementById('resettelorBalado')
@@ -229,22 +266,34 @@ buttonesTeh.addEventListener("click", function (event) {
     const list = document.createElement('li')
     list.classList.add('list-pesanan')
     list.id = 'qtyesTeh'
-    list.innerText = `Es Teh x ${counteresTeh}`
+    list.innerHTML =
+    `
+    <div id= "divEsTeh" style= "display: flex; justify-content: space-between">
+      <span>Es Teh</span>
+      <div style= "display: flex; justify-content: flex-end; width: 53%;"><span style= "float: right;"> X ${counteresTeh}</span></div>
+    </div>
+    `
     belanja.appendChild(list)
     const resetButton = document.createElement('button')
     resetButton.classList.add("buy-btn")
     resetButton.id = 'resetesTeh'
     resetButton.innerText = `Reset`
-    list.appendChild(resetButton)
+    divEsTeh.appendChild(resetButton)
 
   } else {
     let list = document.getElementById("qtyesTeh")
-    list.innerText = `Es Teh x ${counteresTeh}`
+    list.innerHTML =
+    `
+    <div id= "divEsTeh" style= "display: flex; justify-content: space-between">
+      <span>Es Teh</span>
+      <div style= "display: flex; justify-content: flex-end; width: 53%;"><span style= "float: right;"> X ${counteresTeh}</span></div>
+    </div>
+    `
     const resetButton = document.createElement('button')
     resetButton.classList.add("buy-btn")
     resetButton.id = 'resetesTeh'
     resetButton.innerText = `Reset`
-    list.appendChild(resetButton)
+    divEsTeh.appendChild(resetButton)
   }
 
   let buttonResetesTeh = document.getElementById('resetesTeh')
@@ -297,22 +346,34 @@ buttongorengan.addEventListener("click", function (event) {
     const list = document.createElement('li')
     list.classList.add('list-pesanan')
     list.id = 'qtygorengan'
-    list.innerText = `Gorengan x ${countergorengan}`
+    list.innerHTML =
+    `
+    <div id= "divGorengan" style= "display: flex; justify-content: space-between">
+      <span>Gorengan</span>
+      <div style= "display: flex; justify-content: flex-end; width: 45%;"><span style= "float: right;"> X ${countergorengan}</span></div>
+    </div>
+    `
     belanja.appendChild(list)
     const resetButton = document.createElement('button')
     resetButton.classList.add("buy-btn")
     resetButton.id = 'resetgorengan'
     resetButton.innerText = `Reset`
-    list.appendChild(resetButton)
+    divGorengan.appendChild(resetButton)
 
   } else {
     let list = document.getElementById("qtygorengan")
-    list.innerText = `Gorengan x ${countergorengan}`
+    list.innerHTML =
+    `
+    <div id= "divGorengan" style= "display: flex; justify-content: space-between">
+      <span>Gorengan</span>
+      <div style= "display: flex; justify-content: flex-end; width: 45%;"><span style= "float: right;"> X ${countergorengan}</span></div>
+    </div>
+    `
     const resetButton = document.createElement('button')
     resetButton.classList.add("buy-btn")
     resetButton.id = 'resetgorengan'
     resetButton.innerText = `Reset`
-    list.appendChild(resetButton)
+    divGorengan.appendChild(resetButton)
   }
 
   let buttonResetgorengan = document.getElementById('resetgorengan')
@@ -365,22 +426,34 @@ buttonkerupuk.addEventListener("click", function (event) {
     const list = document.createElement('li')
     list.classList.add('list-pesanan')
     list.id = 'qtykerupuk'
-    list.innerText = `Kerupuk x ${counterkerupuk}`
+    list.innerHTML =
+    `
+    <div id= "divKerupuk" style= "display: flex; justify-content: space-between">
+      <span>Kerupuk</span>
+      <div style= "display: flex; justify-content: flex-end; width: 48%;"><span style= "float: right;"> X ${counterkerupuk}</span></div>
+    </div>
+    `
     belanja.appendChild(list)
     const resetButton = document.createElement('button')
     resetButton.classList.add("buy-btn")
     resetButton.id = 'resetkerupuk'
     resetButton.innerText = `Reset`
-    list.appendChild(resetButton)
+    divKerupuk.appendChild(resetButton)
 
   } else {
     let list = document.getElementById("qtykerupuk")
-    list.innerText = `Kerupuk x ${counterkerupuk}`
+    list.innerHTML =
+    `
+    <div id= "divKerupuk" style= "display: flex; justify-content: space-between">
+      <span>Kerupuk</span>
+      <div style= "display: flex; justify-content: flex-end; width: 48%;"><span style= "float: right;"> X ${counterkerupuk}</span></div>
+    </div>
+    `
     const resetButton = document.createElement('button')
     resetButton.classList.add("buy-btn")
     resetButton.id = 'resetkerupuk'
     resetButton.innerText = `Reset`
-    list.appendChild(resetButton)
+    divKerupuk.appendChild(resetButton)
   }
 
   let buttonResetkerupuk = document.getElementById('resetkerupuk')
@@ -433,22 +506,34 @@ buttonosengTempe.addEventListener("click", function (event) {
     const list = document.createElement('li')
     list.classList.add('list-pesanan')
     list.id = 'qtyosengTempe'
-    list.innerText = `Oseng Tempe x ${counterosengTempe}`
+    list.innerHTML =
+    `
+    <div id= "divOsengTempe" style= "display: flex; justify-content: space-between">
+      <span>Oseng Tempe</span>
+      <div style= "display: flex; justify-content: flex-end; width: 36%;"><span style= "float: right;"> X ${counterosengTempe}</span></div>
+    </div>
+    `
     belanja.appendChild(list)
     const resetButton = document.createElement('button')
     resetButton.classList.add("buy-btn")
     resetButton.id = 'resetosengTempe'
     resetButton.innerText = `Reset`
-    list.appendChild(resetButton)
+    divOsengTempe.appendChild(resetButton)
 
   } else {
     let list = document.getElementById("qtyosengTempe")
-    list.innerText = `Oseng Tempe x ${counterosengTempe}`
+    list.innerHTML =
+    `
+    <div id= "divOsengTempe" style= "display: flex; justify-content: space-between">
+      <span>Oseng Tempe</span>
+      <div style= "display: flex; justify-content: flex-end; width: 36%;"><span style= "float: right;"> X ${counterosengTempe}</span></div>
+    </div>
+    `
     const resetButton = document.createElement('button')
     resetButton.classList.add("buy-btn")
     resetButton.id = 'resetosengTempe'
     resetButton.innerText = `Reset`
-    list.appendChild(resetButton)
+    divOsengTempe.appendChild(resetButton)
   }
 
   let buttonResetosengTempe = document.getElementById('resetosengTempe')
@@ -501,22 +586,34 @@ buttonrawon.addEventListener("click", function (event) {
     const list = document.createElement('li')
     list.classList.add('list-pesanan')
     list.id = 'qtyrawon'
-    list.innerText = `Rawon x ${counterrawon}`
+    list.innerHTML =
+    `
+    <div id= "divRawon" style= "display: flex; justify-content: space-between">
+      <span>Rawon</span>
+      <div style= "display: flex; justify-content: flex-end; width: 52%;"><span style= "float: right;"> X ${counterrawon}</span></div>
+    </div>
+    `
     belanja.appendChild(list)
     const resetButton = document.createElement('button')
     resetButton.classList.add("buy-btn")
     resetButton.id = 'resetrawon'
     resetButton.innerText = `Reset`
-    list.appendChild(resetButton)
+    divRawon.appendChild(resetButton)
 
   } else {
     let list = document.getElementById("qtyrawon")
-    list.innerText = `Rawon x ${counterrawon}`
+    list.innerHTML =
+    `
+    <div id= "divRawon" style= "display: flex; justify-content: space-between">
+      <span>Rawon</span>
+      <div style= "display: flex; justify-content: flex-end; width: 52%;"><span style= "float: right;"> X ${counterrawon}</span></div>
+    </div>
+    `
     const resetButton = document.createElement('button')
     resetButton.classList.add("buy-btn")
     resetButton.id = 'resetrawon'
     resetButton.innerText = `Reset`
-    list.appendChild(resetButton)
+    divRawon.appendChild(resetButton)
   }
 
   let buttonResetrawon = document.getElementById('resetrawon')
@@ -569,22 +666,34 @@ buttonsayurKangkung.addEventListener("click", function (event) {
     const list = document.createElement('li')
     list.classList.add('list-pesanan')
     list.id = 'qtysayurKangkung'
-    list.innerText = `Sayur Kangkung x ${countersayurKangkung}`
+    list.innerHTML =
+    `
+    <div id= "divSayurKangkung" style= "display: flex; justify-content: space-between">
+      <span>Sayur Kangkung</span>
+      <div style= "display: flex; justify-content: flex-end; width: 30%;"><span style= "float: right;"> X ${countersayurKangkung}</span></div>
+    </div>
+    `
     belanja.appendChild(list)
     const resetButton = document.createElement('button')
     resetButton.classList.add("buy-btn")
     resetButton.id = 'resetsayurKangkung'
     resetButton.innerText = `Reset`
-    list.appendChild(resetButton)
+    divSayurKangkung.appendChild(resetButton)
 
   } else {
     let list = document.getElementById("qtysayurKangkung")
-    list.innerText = `Sayur Kangkung x ${countersayurKangkung}`
+    list.innerHTML =
+    `
+    <div id= "divSayurKangkung" style= "display: flex; justify-content: space-between">
+      <span>Sayur Kangkung</span>
+      <div style= "display: flex; justify-content: flex-end; width: 30%;"><span style= "float: right;"> X ${countersayurKangkung}</span></div>
+    </div>
+    `
     const resetButton = document.createElement('button')
     resetButton.classList.add("buy-btn")
     resetButton.id = 'resetsayurKangkung'
     resetButton.innerText = `Reset`
-    list.appendChild(resetButton)
+    divSayurKangkung.appendChild(resetButton)
   }
 
   let buttonResetsayurKangkung = document.getElementById('resetsayurKangkung')
@@ -629,13 +738,44 @@ buttonsayurKangkung.addEventListener("click", function (event) {
 let buttonCheckout = document.getElementById("chckout-btn")
 buttonCheckout.addEventListener("click", function () {
   if (total === 0) {
-    alert(`Beli dulu bos!`)
+    // alert(`Beli dulu bos!`) 
+    Swal.fire({
+      title: 'Beli dulu bos!',
+      text: 'Kamu belum memesan apapun',
+      icon: 'error',
+      confirmButtonText: 'kembali ke menu'
+    })
   } else {
-    alert(`Terimakasih telah memesan. Pesanan anda akan segera diantar oleh Mas Yanto ^^. Mohon untuk mempersiapkan biaya sebesar ${new Intl.NumberFormat('id-ID', {
-      style: 'currency',
-      currency: 'IDR'
-    }).format(total)}`)
-    window.location.reload()
+    // alert(`Terimakasih telah memesan. Pesanan anda akan segera diantar oleh Mas Yanto ^^. Mohon untuk mempersiapkan biaya sebesar ${new Intl.NumberFormat('id-ID', {
+    //   style: 'currency',
+    //   currency: 'IDR'
+    // }).format(total)}`)
+    // // window.location.reload()
+    const { value: text } = Swal.fire({
+      input: 'text',
+      inputLabel: 'Masukkan alamatmu :',
+      // inputValue: text,
+      showCancelButton: true,
+      inputValidator: (value) => {
+        if (!value) {
+          return 'Isi alamat bos!'
+        } else {
+          return Swal.fire({
+            title: 'Pesanan berhasil!',
+            text: `Terimakasih telah memesan. Pesanan anda akan segera diantar ke ${value} oleh Mas Yanto ^^. Mohon untuk mempersiapkan biaya sebesar ${new Intl.NumberFormat('id-ID', {
+              style: 'currency',
+              currency: 'IDR'
+            }).format(total)}`,
+            icon: 'success',
+            confirmButtonText: "pesan kembali",
+          }) .then(function(isConfirm) {
+            if (isConfirm) {
+              window.location.reload();
+            } 
+          }); 
+        }
+      }
+    })
   }
 })
 

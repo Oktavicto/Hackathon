@@ -87,6 +87,7 @@ li {
     position: fixed;
     padding: auto;
     margin-left: 0.5%;
+    overflow-y: scroll;
 }
 
 #judul {
@@ -137,6 +138,7 @@ main {
     max-height: fit-content; */
     border-radius: 50px;
     background-color: rgba(245, 245, 245, 0.541);
+    
   }
 
 * {
@@ -203,6 +205,7 @@ footer {
   padding: 15px;
   font-size: larger;
   text-align: center;
+  text-shadow: -2px 1px black;
 }
 
 #owner {
@@ -217,4 +220,6 @@ footer {
 
 .list-pesanan {
   font-size: 105%;
+  /* display: inline; */
+  
 }
