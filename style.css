@@ -124,13 +124,13 @@ main {
 .arrayClass {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 20px;
+    gap: 0;
     margin-left: 2%;
 }
 
 .card {
-    padding: 10px 20px;
-    width: 200px;
+    padding: 30px 20px;
+    width: 275px;
     height: 350px;
     border: 2px solid rgba(0, 0, 0, 0);
     margin: 10px;
@@ -138,6 +138,8 @@ main {
     max-height: fit-content; */
     border-radius: 50px;
     background-color: rgba(245, 245, 245, 0.541);
+    display: grid;
+    justify-content: center;
     
   }
 
@@ -161,20 +163,20 @@ main {
 }
 
 .card-img-top {
-  height: 150px;
-  width: 150px;
-  margin-left: 28px;
+  height: 200px;
+  width: 220px;
+  margin-left: auto;
   padding: 0;
-  border-radius: 100px;
+  border-radius: 50px;
 }
 
 .card-title {
-  width: 180px;
-  height: 50px;
+  width: auto;
+  height: 25px;
   text-align: center;
-  font-size: 135%;
-  padding-top: 20px;
-  margin: 4%;
+  font-size: 170%;
+  padding-top: 15px;
+  margin: 1% 1% 1% 1%;
 }
 
 .card-text {
@@ -183,10 +185,14 @@ main {
   margin: 2% 2% 10% 2%;
 }
 
+div .card-body {
+  display: grid;
+  justify-items: center;
+}
 .card button{
   height: 50px;
   width: 90px;
-  margin-left: 55px;
+  /* margin-left: 35%; */
 }
 
 footer {
