@@ -2,17 +2,20 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body class="body">
     <header>
-        <h1 class="title">WARTOL <span>(Warteg Online)</span></h1>
+        <h1 class="header">WARTOL <span>(Warteg Online)</span></h1>
     </header>
     <main>
         <div class="checkout">
 
-            <h1 class="">Total Belanjaan</h1> 
+            <h1 class="total" id="judul">Total Belanjaan</h1> 
             <ul id="belanjaan">
             </ul>
             <div class="totalBayar">
@@ -22,71 +25,71 @@
             <button id="chckout-btn">checkout</button>
         </div>
         <div class="menu">
-            <h1>MENU</h1>
-            <div class="arrayClass">
+            <h1 id="judul">MENU</h1>
+            <div class="arrayClass" id="scroll">
                 <div class="card"> <!-- ini untuk menampilkan makanan, harga, button untuk beli -->
                     <img src="./asset/nasi.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
 
                       <h5 class="card-title">Nasi</h5>
-                      <p class="card-text">Rp.3.000,00</p>
-                      <button class="nasi" id="nasi"> beli </button>
+                      <p class="card-text">Rp 3.000,00</p>
+                      <button class="buy-btn" id="nasi"> beli </button>
                     </div>
                 </div>
                 <div class="card"> <!-- ini untuk menampilkan makanan, harga, button untuk beli -->
-                    <img src="./asset/ayam.jpg" class="card-img-top" alt="...">
+                    <img src="./asset/ayam.jpg" width="80px" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Ayam</h5>
-                      <p class="card-text">Rp.10.000,00</p>
-                      <button class="ayam" id="ayam"> beli </button>
+                      <p class="card-text">Rp 10.000,00</p>
+                      <button class="buy-btn"  id="ayam"> beli </button>
                     </div>
                 </div>
                 <div class="card"> <!-- ini untuk menampilkan makanan, harga, button untuk beli -->
                     <img src="./asset/esTeh.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Es Teh</h5>
-                      <p class="card-text">Rp.4.000,00</p>
-                      <button class="esTeh" id="esTeh"> beli </button>
+                      <p class="card-text">Rp 4.000,00</p>
+                      <button class="buy-btn" id="esTeh"> beli </button>
                     </div>
                 </div>
                 <div class="card"> <!-- ini untuk menampilkan makanan, harga, button untuk beli -->
                     <img src="./asset/gorengan.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Gorengan</h5>
-                      <p class="card-text">Rp.2.000,00</p>
-                      <button class="gorengan" id="gorengan"> beli </button>
+                      <p class="card-text">Rp 2.000,00</p>
+                      <button class="buy-btn" id="gorengan"> beli </button>
                     </div>
                 </div>
                 <div class="card"> <!-- ini untuk menampilkan makanan, harga, button untuk beli -->
                     <img src="./asset/kerupuk.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Kerupuk</h5>
-                      <p class="card-text">Rp.2.000,00</p>
-                      <button class="kerupuk" id="kerupuk"> beli </button>
+                      <p class="card-text">Rp 2.000,00</p>
+                      <button class="buy-btn" id="kerupuk"> beli </button>
                     </div>
                 </div>
                 <div class="card"> <!-- ini untuk menampilkan makanan, harga, button untuk beli -->
                     <img src="./asset/osengTempe.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Oseng Tempe</h5>
-                      <p class="card-text">Rp.5000,00</p>
-                      <button class="osengTempe" id="osengTempe"> beli </button>
+                      <p class="card-text">Rp 5000,00</p>
+                      <button class="buy-btn" id="osengTempe"> beli </button>
                     </div>
                 </div>
                 <div class="card"> <!-- ini untuk menampilkan makanan, harga, button untuk beli -->
                     <img src="./asset/rawon.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Rawon</h5>
-                      <p class="card-text">Rp.12.000,00</p>
-                      <button class="rawon" id="rawon"> beli </button>
+                      <p class="card-text">Rp 12.000,00</p>
+                      <button class="buy-btn" id="rawon"> beli </button>
                     </div>
                 </div>
                 <div class="card"> <!-- ini untuk menampilkan makanan, harga, button untuk beli -->
                     <img src="./asset/sayurKangkung.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Sayur Kangkung</h5>
-                      <p class="card-text">Rp.5.000,00</p>
-                      <button class="sayurKangkung" id="sayurKangkung"> beli </button>
+                      <p class="card-text">Rp 5.000,00</p>
+                      <button class="buy-btn" id="sayurKangkung"> beli </button>
                     </div>
                 </div>
                 <div class="card"> <!-- ini untuk menampilkan makanan, harga, button untuk beli -->
@@ -94,16 +97,19 @@
                     <div class="card-body">
 
                       <h5 class="card-title">Telur Balado</h5>
-                      <p class="card-text">Rp.5.000,00</p>
-                      <button class="telorBalado" id="telorBalado"> beli </button>
+                      <p class="card-text">Rp 5.000,00</p>
+                      <button class="buy-btn" id="telorBalado"> beli </button>
 
                     </div>
                 </div>
             </div>
         </div>
     </main>
-
-    <footer>foto foto</footer>
+    <footer>
+      <div id="alamat">alamat  : citayam</div>
+      <div id="cp">contact person : 08123456789</div>
+      <div id="owner">created by : ilyas, ratih, andre, daniel, tita</div>
+    </footer>
   <script src="index.js"></script>
   
 </body>
